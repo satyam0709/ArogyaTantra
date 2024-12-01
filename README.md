@@ -1,7 +1,7 @@
 
 # ArogyaTantra - A fully customized Management Platform 📊
 
-Welcome to the ArogyaTantra - A Complete Solution ! This repository is a monorepo containing full stack AI powered service provider management system. Follow this guide to understand the structure, setup, and development workflow.
+Welcome to the ArogyaTantra - A Complete Solution ! This repository is a monorepo containingggg full stack AI powered service provider management system. Follow this guide to understand the structure, setup, and development workflow.
 ---
 
 ## 📁 Project Overview ##

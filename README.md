@@ -1,16 +1,17 @@
 
-# Arogya Tantra Healthcare Platform 🏥
+# Arogya Tantra - A fully customized Management  Platform 📊
 
-Welcome to the Arogya Tantra project! This repository is a monorepo containing both the frontend and backend implementations for a full-stack healthcare application. Follow this guide to understand the structure, setup, and development workflow.
+Welcome to the Arogya Tantra project! This repository is a monorepo containing both the frontend and backend implementations for a full-stack Management System . Follow this guide to understand the structure, setup, and development workflow.
 ---
 
 ## 📁 Project Overview ##
 
-The Platform is designed to manage healthcare services with features like:
+The Platform is designed to manage services  with features like:
 
 - 🔒 User authentication.
 - 📅 Appointment scheduling.
 - 🌐 API integrations.
+-  and many more
 
 It includes:
 

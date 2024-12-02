@@ -1,0 +1,58 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    font-family: Lato, Arial;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .dropdown-icon {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-button,
+  .prebuilt-button {
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .custom-button {
+    margin-right: 10px;
+  }
+  
+  .prebuilt-button {
+    background-color: #000;
+    color: #fff;
+  }
+  

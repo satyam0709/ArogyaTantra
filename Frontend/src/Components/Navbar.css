@@ -143,4 +143,76 @@
     display: flex;
     align-items: center;
   }
-  
+
+
+
+
+
+
+
+
+
+
+
+
+ Default Styles for Navbar
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end; /* Default alignment */
+  align-items: center;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Display Hamburger Icon */
+  .hamburger {
+    display: block;
+  }
+
+  /* Nav Links for Mobile */
+  .nav-links {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    align-items: center; /* Center all items */
+    justify-content: center; /* Center vertically */
+    position: absolute;
+    top: 60px; /* Below the navbar */
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 20px 0;
+    z-index: 10;
+  }
+
+  .nav-links.show {
+    display: flex; /* Show menu when toggled */
+  }
+
+  /* Center all list items */
+  .nav-links li {
+    margin: 10px 0; /* Spacing between items */
+    text-align: center;
+    width: 100%; /* Take full width for consistent alignment */
+  }
+
+  /* Dropdown Adjustments */
+  .expertizes-dropdown-menu,
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    width: auto;
+    text-align: center; /* Center dropdown items */
+  }
+}

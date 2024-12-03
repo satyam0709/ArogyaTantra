@@ -1,10 +1,10 @@
 // import React, { useState } from "react";
-// import "./Navbar.css"; // Assuming styles are in Navbar.css
+// import "./Navbar.css";
 
 // const Navbar = () => {
 //   const [showIndustriesDropdown, setShowIndustriesDropdown] = useState(false);
 //   const [showLanguagesDropdown, setShowLanguagesDropdown] = useState(false);
-//   const [selectedLanguage, setSelectedLanguage] = useState("Languages 🌐");
+//   const [selectedLanguage, setSelectedLanguage] = useState("Languages");
 
 //   const handleLanguageSelect = (language) => {
 //     setSelectedLanguage(language);
@@ -13,7 +13,10 @@
 
 //   return (
 //     <nav className="navbar">
-//       <div className="logo">ArogyaTantra</div>
+//        <div className="logo">
+//         <img src="src/assets/images/logoo.jpg" alt="ArogyaTantra Logo" />
+        
+//       </div>
 //       <ul className="nav-links">
 //         <li>
 //           <a href="#home">Home</a>
@@ -28,26 +31,16 @@
 //           onMouseEnter={() => setShowIndustriesDropdown(true)}
 //           onMouseLeave={() => setShowIndustriesDropdown(false)}
 //         >
-//           <span>Expertizes</span>
-//           <span className="dropdown-icon">▼</span>
+//           <span className="span">Expertizes</span>
+//           <span className="dropdown-icon"></span>
 //           {showIndustriesDropdown && (
-//             <ul className="dropdown-menu animated-dropdown">
-//               <li>
-//                 <a href="#finance">Finance</a>
-//               </li>
-//               <li>
-//                 <a href="#healthcare">Healthcare</a>
-//               </li>
-//               <li>
-//                 <a href="#technology">Technology</a>
-//               </li>
-//               <li>
-//                 <a href="#technology">Banking</a>
-//               </li>
-//               <li>
-//                 <a href="#technology">Education</a>
-//               </li>
-//             </ul>
+//             <div className="expertizes-dropdown-menu">
+//               <div className="expertize-item">Technology</div>
+//               <div className="expertize-item">Banking</div>
+//               <div className="expertize-item">Education</div>
+//               <div className="expertize-item">Finance</div>
+//               <div className="expertize-item">Healthcare</div>
+//             </div>
 //           )}
 //         </li>
 
@@ -56,11 +49,15 @@
 //         </li>
 
 //         {/* Languages Dropdown */}
-//         <li className="dropdown">
-//           <span onClick={() => setShowLanguagesDropdown(!showLanguagesDropdown)}>
-//             {selectedLanguage}
-//           </span>
-//           <span className="dropdown-icon">▼</span>
+//         <li>
+//           <div
+//             className="language-dropdown"
+//             onClick={() => setShowLanguagesDropdown(!showLanguagesDropdown)}
+//           >
+//             <span className="language-icon">🌐</span>
+//             <span>{selectedLanguage}</span>
+//             <span className="dropdown-icon">▼</span>
+//           </div>
 //           {showLanguagesDropdown && (
 //             <ul className="dropdown-menu">
 //               <li onClick={() => handleLanguageSelect("English")}>English</li>
@@ -80,12 +77,6 @@
 
 // export default Navbar;
 
-
-
-
-
-
-
 import React, { useState } from "react";
 import "./Navbar.css";
 
@@ -93,19 +84,31 @@ const Navbar = () => {
   const [showIndustriesDropdown, setShowIndustriesDropdown] = useState(false);
   const [showLanguagesDropdown, setShowLanguagesDropdown] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("Languages");
+  const [menuOpen, setMenuOpen] = useState(false); // State to toggle mobile menu
 
   const handleLanguageSelect = (language) => {
     setSelectedLanguage(language);
     setShowLanguagesDropdown(false); // Close dropdown after selection
   };
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen); // Toggle the mobile menu visibility
+  };
+
   return (
     <nav className="navbar">
-       <div className="logo">
+      {/* Logo */}
+      <div className="logo">
         <img src="src/assets/images/logoo.jpg" alt="ArogyaTantra Logo" />
-        
       </div>
-      <ul className="nav-links">
+
+      {/* Hamburger Icon */}
+      <div className="hamburger" onClick={toggleMenu}>
+        ☰
+      </div>
+
+      {/* Nav Links */}
+      <ul className={`nav-links ${menuOpen ? "show" : ""}`}>
         <li>
           <a href="#home">Home</a>
         </li>
@@ -120,7 +123,7 @@ const Navbar = () => {
           onMouseLeave={() => setShowIndustriesDropdown(false)}
         >
           <span className="span">Expertizes</span>
-          <span className="dropdown-icon"></span>
+          <span className="dropdown-icon">▼</span>
           {showIndustriesDropdown && (
             <div className="expertizes-dropdown-menu">
               <div className="expertize-item">Technology</div>
@@ -164,4 +167,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

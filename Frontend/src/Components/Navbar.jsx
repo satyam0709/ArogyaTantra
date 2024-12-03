@@ -102,7 +102,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
        <div className="logo">
-        <img src="src/assets/images/logo12.png" alt="ArogyaTantra Logo" />
+        <img src="src/assets/images/logoo.jpg" alt="ArogyaTantra Logo" />
+        
       </div>
       <ul className="nav-links">
         <li>

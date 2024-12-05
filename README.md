@@ -1,7 +1,7 @@
 
 # ArogyaTantra - A fully customized Management Platform 📊
 
-Welcome to the ArogyaTantra - A Complete Solution ! This repository is a monorepo containing full stack AI powered service provider management system. Follow this guide to understand the structure, setup, and development workflow.
+Welcome to the ArogyaTantra - A Complete Managemnt System Solution ! This repository is a monorepo containing full stack AI powered  management system. Follow this guide to understand the structure, setup, and development workflow.
 ---
 
 ## 📁 Project Overview ##
@@ -22,85 +22,85 @@ It includes:
 ## 📂 Project Structure ##
 
 ```plaintext
-healthcare-platform/
-├── frontend/        # React application
-├── backend/         # Node.js/Express application
-├── docs/            # Documentation (API specs, architecture diagrams, etc.)
-├── .github/         # GitHub Actions workflows
-├── LICENSE          # Licensing information
-├── .gitignore       # Ignored files
-├── README.md        # Project documentation
-└── package.json     # Dependency manager (if using monorepo workspaces)
+healthcare-platform 📂
+├── frontend 📂        
+├── backend 📂         
+├── docs 🧾            
+├── .github 📂       
+├── LICENSE 🪪            
+├── .gitignore         
+├── README.md 🗃️       
+└── package.json 📦  
 ```
 ---
 
 ## 💻 Frontend Directory Structure ##
 ```plaintext
-frontend/
-├── public/                   # Static files
+frontend 📂
+├── public 📂                   
 │   ├── favicon.ico
-│   └── index.html            # HTML template
+│   └── index.html          
 │
-├── src/                      # React source files
-│   ├── assets/               # Global assets (CSS, images, fonts)
-│   │   ├── styles/           # Global styles
-│   │   └── images/           # Image assets
+├── src 📂                      
+│   ├── assets 📂               
+│   │   ├── styles 📂          
+│   │   └── images 🖼️          
 │   │
-│   ├── components/           # Reusable UI components
+│   ├── components 📂          
 │   │   ├── Navbar.jsx
 │   │   ├── Footer.jsx
 │   │   └── Button.jsx
 │   │
-│   ├── pages/                # Page-specific components
+│   ├── pages 🧾              
 │   │   ├── Home.jsx
 │   │   ├── About.jsx
 │   │   └── Contact.jsx
 │   │
-│   ├── services/             # API service calls
+│   ├── services 📂              
 │   │   └── api.js
 │   │
-│   ├── App.jsx               # Main app component
-│   ├── index.js              # React entry point
-│   └── config.js             # Environment configuration
+│   ├── App.jsx               
+│   ├── index.js              
+│   └── config.js             
 │
-├── .env                      # Frontend environment variables
-├── package.json              # Frontend dependencies
-└── vite.config.js            # Build configuration
+├── .env 📂                     
+├── package.json              
+└── vite.config.js            
 ```
 ---
 ## 🛠 Backend Directory Structure ##
 ```plaintext
-backend/
-├── src/                      # Source files
-│   ├── config/               # Configuration files
-│   │   ├── db.js             # Database connection logic
-│   │   └── env.js            # Environment variables
+backend 📂
+├── src 📂                      
+│   ├── config 📂              
+│   │   ├── db.js             
+│   │   └── env.js            
 │   │
-│   ├── controllers/          # API request handlers
-│   │   ├── authController.js # Authentication logic
-│   │   └── userController.js # User-related logic
+│   ├── controllers 📂         
+│   │   ├── authController.js 
+│   │   └── userController.js 
 │   │
-│   ├── middlewares/          # Middleware functions
-│   │   └── authMiddleware.js # Auth/authorization
+│   ├── middlewares 📂          
+│   │   └── authMiddleware.js 
 │   │
-│   ├── models/               # Database models
+│   ├── models 📂              
 │   │   ├── User.js
 │   │   └── Appointment.js
 │   │
-│   ├── routes/               # API routes
+│   ├── routes 📂              
 │   │   ├── authRoutes.js
 │   │   ├── userRoutes.js
 │   │   └── index.js
 │   │
-│   ├── services/             # Reusable services
-│   │   └── emailService.js   # Email notifications
+│   ├── services 📂           
+│   │   └── emailService.js   
 │   │
-│   ├── app.js                # Express app setup
-│   └── server.js             # Server entry point
+│   ├── app.js                
+│   └── server.js             
 │
-├── .env                      # Backend environment variables
-├── package.json              # Backend dependencies
-└── nodemon.json              # Nodemon configuration
+├── .env 📂                    
+├── package.json              
+└── nodemon.json              
 ```
 ---
 

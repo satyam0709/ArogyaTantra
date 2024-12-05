@@ -1,11 +1,10 @@
 import React from 'react'
+import Hero from '../Components/Hero'
 
-const landing = () => {
+const Landing = () => {
   return (
-    <div>
-      lodu
-    </div>
+
   )
 }
 
-export default landing
+export default Landing

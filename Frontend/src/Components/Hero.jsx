@@ -10,10 +10,10 @@ const Hero = () => {
                 <p className="hero-description">
                 Build apps fast, leverage generative AI, and analyze data in seconds—all with Google-grade security.
                 </p>
-                <div className="hero-buttons">
-                    <button className="btn btn-one">Get started for free</button>
-                    <button className="btn btn-two">Contact sales</button>
-                </div>
+                {/* <div className="hero-buttons">
+                    <a href="#" className="btn btn-one">Get started for free</a>
+                    <a href="#" className="btn btn-two">Contact sales</a>
+                </div> */}
             </div>
 
             {/* Right Side */}
@@ -21,8 +21,10 @@ const Hero = () => {
                 <video
                     className="hero-video"
                     src="https://www.w3schools.com/html/mov_bbb.mp4"
+                    autoPlay 
+                    loop
+                    muted
                     controls
-                    alt="Landing Page Video"
                 />
             </div>
         </div>

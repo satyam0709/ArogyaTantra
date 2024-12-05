@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     gap: 2rem;
 }
 
@@ -24,22 +24,17 @@
     text-align: left;
 }
 
-/* @media (min-width: 768px) {
-    .hero-left {
-        text-align: left;
-    }
-} */
-
 .hero-heading {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     color: #007bff;
 }
 
 .hero-description {
-    margin: 1rem 0;
-    font-size: 1.2rem;
-    color: #555;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #212020;
 }
 
 .hero-buttons {
@@ -51,6 +46,8 @@
 
 .btn {
     margin-bottom: 0.5rem;
+    text-align: center;
+    text-decoration: none;
 }
 .btn-one {
     padding: 0.8rem 1.5rem;
@@ -85,7 +82,18 @@
 }
 
 .btn-two:hover {
-    border: 0.5px solid blue;
+    border: 0.5px solid #007bff;
+}
+
+@media (max-width: 450px) {
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn {
+        width: 100%;
+    }
 }
 
 /* Right Section */
@@ -98,9 +106,28 @@
 
 .hero-video {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 820px) {
+    .hero-container {
+        display: block;
+    }
+    .hero-video {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-container {
+        padding: 1rem;
+    }
 }
 
 /* Responsive Design */

@@ -7,6 +7,7 @@ import Hero from "./Hero";
 const LandingPage = () => {
   return (
     <Router>
+
       <div className="landing-page">
         {/* Navbar is always visible */}
         <Navbar />

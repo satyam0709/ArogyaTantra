@@ -85,6 +85,7 @@ const Home = () => (
 
 const Custom = () => (
   <div className="page">
+
     <h1>Custom Solutions</h1>
     <p>
       Here you can explore custom solutions tailored to your industry needs.
